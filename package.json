@@ -93,7 +93,11 @@
     "test-image": "npm run compile:less && docker-compose run tests",
     "version": "node ./scripts/generate-version"
   },
-  "husky": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "browserslist": [
     "last 2 versions",
     "Firefox ESR",
