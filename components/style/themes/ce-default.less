@@ -93,9 +93,9 @@
 @margin-xss: 4px; // more small
 
 // height rules
-@height-base: 34px;
-@height-lg: 44px;
-@height-sm: 28px;
+@height-base: 32px;
+@height-lg: 40px;
+@height-sm: 24px;
 
 // The background colors for active and hover states for things like
 // list items or table cells.
@@ -131,7 +131,7 @@
 @ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
 
 // Border color
-@border-color-base: #d7d8e0; // base border outline a component
+@border-color-base: hsv(0, 0, 85%); // base border outline a component
 @border-color-split: hsv(0, 0, 94%); // split border inside a component
 @border-color-inverse: @white;
 @border-width-base: 1px; // width of the border for a component
@@ -405,7 +405,7 @@
 @input-number-handler-bg: @component-background;
 @input-number-handler-border-color: @border-color-base;
 @input-addon-bg: @background-color-light;
-@input-hover-border-color: #0a6efa;
+@input-hover-border-color: @primary-5;
 @input-disabled-bg: @disabled-bg;
 @input-outline-offset: 0 0;
 @input-icon-hover-color: fade(@black, 85%);
@@ -413,7 +413,8 @@
 
 @input-border-width: @border-width-base;
 @input-border-radius: @border-radius-base;
-@input-line-height: @line-height-base;
+//@input-line-height: @line-height-base;
+@input-line-height: 34px;
 
 // Mentions
 // ---
@@ -424,7 +425,7 @@
 // ---
 @select-border-color: @border-color-base;
 @select-item-selected-color: @text-color;
-@select-item-selected-font-weight: 400;
+@select-item-selected-font-weight: 600;
 @select-dropdown-bg: @component-background;
 @select-item-selected-bg: @primary-1;
 @select-item-active-bg: @item-hover-bg;

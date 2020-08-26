@@ -11,7 +11,7 @@
     padding: 0 @horizontal-padding;
 
     &::before {
-      transform: translateX(-@horizontal-padding - @border-width-base);
+      transform: translateX(-@horizontal-padding - @input-border-width);
     }
 
     &::after {
@@ -44,7 +44,7 @@
       top: 0;
       bottom: 0;
       display: block;
-      border-left: @border-width-base @border-style-base @input-border-color;
+      border-left: @input-border-width @border-style-base @input-border-color;
       transition: all 0.3s;
       content: '';
     }

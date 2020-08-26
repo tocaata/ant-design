@@ -59,14 +59,14 @@
 .active() {
   .@{input-rtl-cls} & {
     border-right-width: 0;
-    border-left-width: @border-width-base !important;
+    border-left-width: @input-border-width !important;
   }
 }
 
 .hover() {
   .@{input-rtl-cls} & {
     border-right-width: 0;
-    border-left-width: @border-width-base !important;
+    border-left-width: @input-border-width !important;
   }
 }
 
@@ -80,12 +80,12 @@
 .input-group(@inputClass) {
   > .@{inputClass}-rtl:first-child,
   &-rtl &-addon:first-child {
-    border-radius: 0 @border-radius-base @border-radius-base 0;
+    border-radius: 0 @input-border-radius @input-border-radius 0;
   }
 
   &-addon:first-child {
     .@{inputClass}-group-rtl & {
-      border-right: @border-width-base @border-style-base @input-border-color;
+      border-right: @input-border-width @border-style-base @input-border-color;
       border-left: 0;
     }
   }
@@ -93,27 +93,27 @@
   &-addon:last-child {
     .@{inputClass}-group-rtl & {
       border-right: 0;
-      border-left: @border-width-base @border-style-base @input-border-color;
+      border-left: @input-border-width @border-style-base @input-border-color;
     }
   }
 
   > .@{inputClass}:last-child,
   &-addon:last-child {
     .@{inputClass}-group-rtl& {
-      border-radius: @border-radius-base 0 0 @border-radius-base;
+      border-radius: @input-border-radius 0 0 @input-border-radius;
     }
   }
 
   .@{inputClass}-affix-wrapper {
     &:not(:first-child) {
       .@{inputClass}-group-rtl& {
-        border-radius: @border-radius-base 0 0 @border-radius-base;
+        border-radius: @input-border-radius 0 0 @input-border-radius;
       }
     }
 
     &:not(:last-child) {
       .@{inputClass}-group-rtl& {
-        border-radius: 0 @border-radius-base @border-radius-base 0;
+        border-radius: 0 @input-border-radius @input-border-radius 0;
       }
     }
   }
@@ -122,8 +122,8 @@
     & > *:not(:last-child) {
       .@{inputClass}-group-rtl& {
         margin-right: 0;
-        margin-left: -@border-width-base;
-        border-left-width: @border-width-base;
+        margin-left: -@input-border-width;
+        border-left-width: @input-border-width;
       }
     }
 
@@ -135,7 +135,7 @@
     & > .@{ant-prefix}-mention-wrapper:first-child .@{ant-prefix}-mention-editor,
     & > .@{ant-prefix}-time-picker:first-child .@{ant-prefix}-time-picker-input {
       .@{inputClass}-group-rtl& {
-        border-radius: 0 @border-radius-base @border-radius-base 0;
+        border-radius: 0 @input-border-radius @input-border-radius 0;
       }
     }
 
@@ -148,8 +148,8 @@
     & > .@{ant-prefix}-mention-wrapper:last-child .@{ant-prefix}-mention-editor,
     & > .@{ant-prefix}-time-picker:last-child .@{ant-prefix}-time-picker-input {
       .@{inputClass}-group-rtl& {
-        border-left-width: @border-width-base;
-        border-radius: @border-radius-base 0 0 @border-radius-base;
+        border-left-width: @input-border-width;
+        border-radius: @input-border-radius 0 0 @input-border-radius;
       }
     }
   }
@@ -180,7 +180,7 @@
       .@{search-rtl-cls} & {
         right: auto;
         left: 0;
-        border-right: @border-width-base @border-style-base @input-border-color;
+        border-right: @input-border-width @border-style-base @input-border-color;
         transition: all 0.3s;
       }
     }
@@ -196,7 +196,7 @@
   &-enter-button {
     input {
       .@{search-rtl-cls}& {
-        border-right: @border-width-base @border-style-base @input-border-color;
+        border-right: @input-border-width @border-style-base @input-border-color;
         border-left: 0;
       }
 
@@ -210,7 +210,7 @@
 
     &.@{ant-prefix}-input-affix-wrapper {
       .@{search-rtl-cls}& {
-        border-right: @border-width-base @border-style-base @input-border-color;
+        border-right: @input-border-width @border-style-base @input-border-color;
         border-left: 0;
       }
 
@@ -230,7 +230,7 @@
 
         .@{search-prefix}-button {
           width: 100%;
-          border-radius: @border-radius-base 0 0 @border-radius-base;
+          border-radius: @input-border-radius 0 0 @input-border-radius;
         }
       }
     }
