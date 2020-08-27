@@ -48,6 +48,7 @@
       position: relative;
       display: flex;
       transition: transform @animation-duration-slow;
+      margin-top: @tabs-nav-list-margin-top;
     }
 
     // >>>>>>>> Operations
@@ -84,7 +85,7 @@
       padding: 0 @padding-xs;
       background: @tabs-card-head-background;
       border: @border-width-base @border-style-base @border-color-split;
-      border-radius: @border-radius-base @border-radius-base 0 0;
+      border-radius: @tabs-border-radius @tabs-border-radius 0 0;
       outline: none;
       cursor: pointer;
       transition: all @animation-duration-slow @ease-in-out;
@@ -130,6 +131,7 @@
     margin: @tabs-horizontal-margin;
     padding: @tabs-horizontal-padding;
     font-size: @tabs-title-font-size;
+    color: @tabs-title-color;
     background: transparent;
     border: 0;
     outline: none;
@@ -171,11 +173,12 @@
 
     &:hover {
       color: @tabs-hover-color;
+      background: @tabs-hover-background;
     }
 
     &&-active &-btn {
       color: @tabs-highlight-color;
-      font-weight: 500;
+      font-weight: @tabs-card-active-font-weight;
     }
 
     &&-disabled {
