@@ -148,6 +148,7 @@
 
 // Disabled states
 @disabled-color: fade(#000, 25%);
+@disabled-inner-color: #fff;
 @disabled-bg: @background-color-base;
 @disabled-color-dark: fade(#fff, 35%);
 
@@ -224,11 +225,13 @@
 @btn-text-hover-bg: rgba(0, 0, 0, 0.018);
 
 // Checkbox
-@checkbox-size: 16px;
+@checkbox-size: 18px;
 @checkbox-color: @primary-color;
 @checkbox-check-color: #fff;
 @checkbox-check-bg: @checkbox-check-color;
 @checkbox-border-width: @border-width-base;
+@checkbox-disabled-checked-bg: #d7d8e0;
+@checkbox-font-size: 16px;
 @checkbox-group-item-margin-right: 8px;
 
 // Descriptions
@@ -256,17 +259,18 @@
 @empty-font-size: @font-size-base;
 
 // Radio
-@radio-size: 16px;
+@radio-size: 18px;
 @radio-top: 0px;
-@radio-dot-color: @primary-color;
+@radio-dot-color: @btn-default-bg;
 @radio-dot-disabled-color: fade(@black, 20%);
 @radio-solid-checked-color: @component-background;
 
 // Radio buttons
 @radio-button-bg: @btn-default-bg;
-@radio-button-checked-bg: @btn-default-bg;
+@radio-button-checked-bg: @primary-6;
 @radio-button-color: @btn-default-color;
 @radio-button-hover-color: @primary-5;
+@radio-button-hover-border-color: #a4a5b3;
 @radio-button-active-color: @primary-7;
 @radio-disabled-button-checked-bg: tint(@black, 90%);
 @radio-disabled-button-checked-color: @disabled-color;

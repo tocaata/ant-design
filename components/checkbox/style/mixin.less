@@ -14,6 +14,7 @@
     vertical-align: middle;
     outline: none;
     cursor: pointer;
+    font-size: @checkbox-font-size;
 
     .@{checkbox-prefix-cls}-wrapper:hover &-inner,
     &:hover &-inner,
@@ -114,9 +115,13 @@
     cursor: not-allowed;
 
     &.@{checkbox-prefix-cls}-checked {
-      .@{checkbox-inner-prefix-cls}::after {
-        border-color: @disabled-color;
-        animation-name: none;
+      .@{checkbox-inner-prefix-cls} {
+        background-color: @checkbox-disabled-checked-bg;
+        border-color: @checkbox-disabled-checked-bg !important;
+        &::after {
+          border-color: @disabled-inner-color;
+          animation-name: none;
+        }
       }
     }
 
@@ -149,6 +154,7 @@
   .@{checkbox-prefix-cls}-wrapper {
     .reset-component;
 
+    font-size: @checkbox-font-size;
     display: inline-block;
     line-height: unset;
     cursor: pointer;
@@ -188,8 +194,8 @@
       border-color: @border-color-base;
     }
     .@{checkbox-inner-prefix-cls}::after {
-      @indeterminate-width: @checkbox-size - 8px;
-      @indeterminate-height: @checkbox-size - 8px;
+      @indeterminate-width: @checkbox-size / 3;
+      @indeterminate-height: @checkbox-size / 3;
 
       top: 50%;
       left: 50%;
