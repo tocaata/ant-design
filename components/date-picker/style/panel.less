@@ -43,7 +43,6 @@
     display: flex;
     padding: 0 @padding-xs;
     color: @heading-color;
-    border-bottom: @border-width-base @border-style-base @picker-border-color;
 
     > * {
       flex: none;
@@ -196,8 +195,8 @@
         right: 0;
         bottom: 0;
         left: 0;
-        z-index: 1;
-        border: @border-width-base @border-style-base @primary-color;
+        z-index: -1;
+        background-color: @picker-cell-today-bg;
         border-radius: @border-radius-base;
         content: '';
       }
@@ -206,6 +205,7 @@
     // >>> In Range
     &-in-view&-in-range {
       position: relative;
+      color: @text-color-inverse;
 
       &::before {
         background: @picker-basic-cell-active-with-range-color;
@@ -408,7 +408,6 @@
     border-bottom: @border-width-base @border-style-base transparent;
 
     .@{picker-prefix-cls}-panel & {
-      border-top: @border-width-base @border-style-base @picker-border-color;
     }
 
     &-extra {
