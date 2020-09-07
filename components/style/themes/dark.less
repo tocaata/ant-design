@@ -159,10 +159,10 @@
 @primary-10: mix(color(~`colorPalette('@{primary-color}', 2) `), @component-background, 98%);
 
 // Layer background
-@popover-background: #1f1f1f;
+@popover-background: #292830;
 @popover-customize-border-color: #3a3a3a;
 @body-background: @black;
-@component-background: #141414;
+@component-background: #212029;
 
 @text-color: fade(@white, 85%);
 @text-color-secondary: fade(@white, 45%);
@@ -215,7 +215,7 @@
 @btn-primary-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
 @btn-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
 
-@btn-default-bg: transparent;
+@btn-default-bg: @component-background;
 
 @btn-default-ghost-color: @text-color;
 @btn-default-ghost-border: fade(@white, 25%);
@@ -243,11 +243,18 @@
 
 // Radio
 // ---
+@radio-checked-color: @primary-6;
 @radio-solid-checked-color: @white;
 @radio-dot-disabled-color: fade(@white, 20%);
 
 // Radio buttons
 // ---
+@radio-button-bg: @btn-default-bg;
+@radio-button-checked-bg: @primary-6;
+@radio-button-color: @btn-default-color;
+@radio-button-hover-color: @primary-5;
+@radio-button-hover-border-color: #a4a5b3;
+@radio-button-active-color: @primary-7;
 @radio-disabled-button-checked-bg: fade(@white, 20%);
 @radio-disabled-button-checked-color: @disabled-color;
 
@@ -317,6 +324,11 @@
 @table-expanded-row-bg: @table-header-bg;
 @table-filter-dropdown-bg: @popover-background;
 @table-expand-icon-bg: transparent;
+@table-text-color: @white;
+
+// Tabs
+@tabs-card-active-color: @white;
+@tabs-card-head-background: #18171d;
 
 // TimePicker
 // ---
