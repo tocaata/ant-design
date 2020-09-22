@@ -158,6 +158,7 @@
 @primary-9: mix(color(~`colorPalette('@{primary-color}', 3) `), @component-background, 97%);
 @primary-10: mix(color(~`colorPalette('@{primary-color}', 2) `), @component-background, 98%);
 
+@primary-color: #0a6efa;
 // Layer background
 @popover-background: #292830;
 @popover-customize-border-color: #3a3a3a;
@@ -211,19 +212,26 @@
 
 // Buttons
 // ---
+@btn-hover-border-color: #757685;
 @btn-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
 @btn-primary-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
 @btn-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
 
 @btn-default-bg: @component-background;
+@btn-active-bg: #3e3e47;
 
 @btn-default-ghost-color: @text-color;
 @btn-default-ghost-border: fade(@white, 25%);
 
 @btn-text-hover-bg: rgba(255, 255, 255, 0.03);
 
+@btn-disable-color: rgba(255, 255, 255, 0.4);
+@btn-disable-bg: transparent;
+@btn-disable-border: rgba(95, 95, 107, 0.4);
+
 // Checkbox
 // ---
+@checkbox-disabled-checked-bg: #757685;
 @checkbox-check-bg: transparent;
 
 // Descriptions
@@ -253,7 +261,7 @@
 @radio-button-checked-bg: @primary-6;
 @radio-button-color: @btn-default-color;
 @radio-button-hover-color: @primary-5;
-@radio-button-hover-border-color: #a4a5b3;
+@radio-button-hover-border-color: #757685;
 @radio-button-active-color: @primary-7;
 @radio-disabled-button-checked-bg: fade(@white, 20%);
 @radio-disabled-button-checked-color: @disabled-color;
@@ -314,9 +322,9 @@
 
 // Table
 // --
-@table-header-bg: #1d1d1d;
+@table-header-bg: rgba(49, 49, 56, 0.6);
 @table-body-sort-bg: fade(@white, 1%);
-@table-row-hover-bg: #262626;
+@table-row-hover-bg: rgba(138, 139, 153, 0.13);
 @table-header-sort-bg: #262626;
 @table-header-filter-active-bg: #434343;
 @table-header-sort-active-bg: #303030;
