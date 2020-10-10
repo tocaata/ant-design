@@ -61,7 +61,6 @@
     .@{custom-tree-node-prefix-cls} {
       display: flex;
       align-items: flex-start;
-      padding: 0 0 (@padding-xs / 2) 0;
       outline: none;
       // Disabled
       &-disabled {
@@ -89,7 +88,7 @@
 
       &-unit {
         display: inline-block;
-        width: @tree-title-height;
+        width: @tree-indent-width;
       }
     }
 
@@ -98,7 +97,7 @@
       .antTreeSwitcherIcon();
       flex: none;
 
-      width: @tree-title-height;
+      width: @tree-switcher-width;
       height: @tree-title-height;
       margin: 0;
       line-height: @tree-title-height;

@@ -174,7 +174,7 @@
 // The background colors for active and hover states for things like
 // list items or table cells.
 @item-active-bg: @primary-1;
-@item-hover-bg: fade(@white, 8%);
+@item-hover-bg: rgba(138, 139, 153, 0.14);
 
 // Border color
 @border-color-base: #434343; // base border outline a component
@@ -191,6 +191,7 @@
 // Tree
 // ---
 @tree-bg: transparent;
+@tree-node-selected-bg: rgba(10, 108, 255, 0.2);
 
 // List
 // ---
@@ -283,6 +284,7 @@
 // Select
 // ---
 @select-background: transparent;
+@select-item-selected-bg: rgba(10, 108, 255, 0.2);
 @select-dropdown-bg: @popover-background;
 @select-clear-background: @component-background;
 @select-selection-item-bg: fade(@white, 8);
@@ -332,6 +334,7 @@
 @table-expanded-row-bg: @table-header-bg;
 @table-filter-dropdown-bg: @popover-background;
 @table-expand-icon-bg: transparent;
+@table-selected-row-bg: rgba(10, 108, 255, 0.06);
 @table-selected-row-hover-bg: @table-row-hover-bg;
 @table-text-color: @white;
 
